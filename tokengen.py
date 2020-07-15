@@ -13,7 +13,7 @@ def gen():
 	print('Got fingerprint: '+fingerprint)
 
 	print('Generating token...')
-	r = req.post('https://discord.com/api/auth/register', json = {'captcha_key': None ,'consent': True ,'fingerprint': fingerprint,'gift_code_sku_id': None,'username': '[DISCORD] NiggerKiller'}, proxies = proxy).json()
+	r = req.post('https://discord.com/api/auth/register', json = {'captcha_key': None ,'consent': True ,'fingerprint': fingerprint,'gift_code_sku_id': None,'username': 'Username'}, proxies = proxy).json()
 	token = r['token']
 	print('Token generated: '+token)
 
